@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartArrowDown } from '@fortawesome/free-solid-svg-icons'
+import { faUser  } from '@fortawesome/free-solid-svg-icons'
 import { Link } from 'react-router-dom';
 
 function Header() {
@@ -28,9 +29,11 @@ function Header() {
             
           </Nav>
           <Form className="d-flex">
+          <Button as={Link} to="/admin/adminDashboard" className='btn btn-primary btn-lg'><FontAwesomeIcon icon={faUser} /></Button>
           
-          <Button as={Link} to="/cart" className='btn btn-info btn-lg'><FontAwesomeIcon icon={faCartArrowDown} /></Button>
-          <Button as={Link} to="/login" className='btn btn-success mx-3 btn-lg'>Login</Button>
+          <Button as={Link} to="/cart" className='btn btn-info btn-lg mx-2'><FontAwesomeIcon icon={faCartArrowDown} /></Button>
+          <Button as={Link} to="/userDashboard" className='btn btn-primary btn-lg'><FontAwesomeIcon icon={faUser} /></Button>
+          <Button as={Link} to="/login" className='btn btn-success mx-2 btn-lg'>Login</Button>
         
           </Form>
         </Navbar.Collapse>

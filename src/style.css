@@ -13,3 +13,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .login-heading{
     margin: 0 auto;
 }
+.navActive{
+    background-color: rgb(0, 152, 240);
+    color: #fff !important;
+}
